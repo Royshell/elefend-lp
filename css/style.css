@@ -13,6 +13,9 @@ header.mdl-layout__header {
   padding: 0;
   box-shadow: none;
 }
+.ftc {
+  mix-blend-mode: luminosity;
+}
 .mdl-layout__header-row {
   width: 100%;
   display: flex;
