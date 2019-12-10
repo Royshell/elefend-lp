@@ -137,6 +137,10 @@ a {
   display: inline-block;
   height: 1rem;
 }
+.stripe.mobile.lower .menu a {
+  min-width: 17rem;
+  white-space: nowrap;
+}
 .stripe.mobile.lower > div {
   display: flex;
   width: 100%;
