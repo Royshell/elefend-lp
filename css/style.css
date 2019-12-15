@@ -21,17 +21,28 @@ header.mdl-layout__header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 8rem;
-  margin-top: 2rem;
+  padding: 0 13.5rem;
 }
 .mdl-layout__drawer {
+  width: 28.5rem;
+  left: -5rem;
   background-color: #1a2643;
-  padding: 1rem;
+  padding: 1rem 2rem;
   color: #fff;
+  border: 0;
+}
+.mdl-layout__drawer.is-visible {
+  left: 0;
+}
+.mdl-layout__drawer nav {
+  margin-top: 2rem;
 }
 .mdl-layout__drawer div a {
   font-size: 1.6rem;
   font-family: 'Montserrat', sans-serif; 
+  font-weight: 700;
+  color: #fff;
+  line-height: 2.5;
 }
 header.mdl-layout__header .mdl-layout__drawer-button {
   position: static;
@@ -41,6 +52,9 @@ div.mdl-layout__header-row .mdl-navigation__link {
   font-family: 'Montserrat', sans-serif; 
   color: #fff;
   font-weight: 700;
+}
+div.mdl-layout__header-row .mdl-navigation__link:hover { 
+  color: #9B9B9B;
 }
 h1 {
   margin: 0;
@@ -62,7 +76,7 @@ p {
   font-size: 1.8rem;
   line-height: 1.67;
   font-family: 'Montserrat', sans-serif; 
-  font-weight: 700;
+  font-weight: 400;
 }
 a {
   cursor: pointer;
@@ -104,7 +118,7 @@ a {
   background-color: #f8f8f8;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10rem;
+  padding: 0 13.5rem;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
@@ -232,7 +246,7 @@ button {
 }
 button:hover {
   opacity: 0.2;
-  color: #000;
+  background-color: #000;
 }
 .mid-block {
   max-width: 51rem;
@@ -256,7 +270,7 @@ button:hover {
   font-size: 1.8rem;
 }
 #bottom img {
-
+  margin-right: 2rem;
 }
 .not-mobile, .not-mobile-flex  {
   display: none;
@@ -290,12 +304,16 @@ button:hover {
     font-size: 2.4rem;
   }
   .top-section, #bottom {
+    
     flex-direction: row;
     padding: 0;
     align-items: flex-end;
   }  
+  #bottom { 
+    height: 61rem;
+  }
   .text-block {
-    padding: 10rem 0 15rem 10rem;
+    padding: 8rem 0 2.5rem 13.5rem;
   }
   .text-block p {
     width: 69rem;
@@ -313,7 +331,7 @@ button:hover {
     margin-left: 10rem;
   }
    .mid-block {
-    margin: 10rem;
+    margin: 10rem 13.5rem;
   }
   .mobile {
     display: none;
@@ -323,5 +341,8 @@ button:hover {
   }
   .not-mobile-flex {
     display: flex;
+  }
+  #bottom .text-block {
+    padding: 6rem 0 6rem 13.5rem;
   }
 }
